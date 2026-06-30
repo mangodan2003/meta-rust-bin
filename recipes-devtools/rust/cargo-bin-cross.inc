@@ -8,7 +8,7 @@ inherit rust_bin-common
 
 python () {
     layerseries = d.getVar("LAYERSERIES_COMPAT_core")
-    if layerseries in ["walnascar", "whinlatter"]:
+    if layerseries in ["walnascar", "whinlatter", "wrynose"]:
         d.setVar("COMPATIBLE_PACKDIR", d.getVar("UNPACKDIR"))
         d.setVar("COMPATIBLE_PACKDIR_string", "UNPACKDIR")
     else:
